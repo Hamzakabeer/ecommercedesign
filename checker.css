@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Top Banner */
+  .top-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .top-banner p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .top-banner .shop-now {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .top-banner .shop-now:hover {
+    color: #ffffff;
+  }
+  
+  /* Language Selector */
+  .language-selector {
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-selector .selected-language {
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-selector .arrow::after {
+    content: "▼";
+    margin-left: 8px;
+    font-size: 0.7rem;
+  }
+  
+  .language-selector .language-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    color: #000;
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    width: 150px;
+  }
+  
+  .language-selector .language-options li {
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .language-selector .language-options li:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* Show dropdown on hover */
+  .language-selector:hover .language-options {
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .top-banner {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .top-banner p {
+      margin-bottom: 0.5rem;
+    }
+  }
+  

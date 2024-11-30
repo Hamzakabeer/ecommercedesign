@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #fff;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #000;
+    padding: 2rem 1rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  /* Footer Section */
+  .footer-section {
+    flex: 1 1 200px;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #fff;
+  }
+  
+  .footer-section p {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Subscribe Form */
+  .subscribe-form {
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+  .subscribe-form input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    color: #000;
+  }
+  
+  .subscribe-form button {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #e6b800;
+  }
+  
+  /* Download Links */
+  .download-links img {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 120px;
+    height: 40px;
+  }
+  
+  /* Social Icons */
+  .social-icons a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    color: #ccc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+  
+    .footer-section {
+      flex: 1 1 auto;
+    }
+  }
+  
