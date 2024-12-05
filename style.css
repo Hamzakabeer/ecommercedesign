@@ -167,7 +167,7 @@
   }
   
   .search-bar .search-icon::before {
-    content: url(assets/images/icon.svg);
+    content: url('assets/images/icon.svg');
     font-size: 1.2rem;
   }
   
